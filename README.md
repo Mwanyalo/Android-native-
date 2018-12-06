@@ -5,6 +5,7 @@ Android development class
 This was a training class, nothing interesting
 
 
+
 1.	Introduction to java programming
 2.	Course Introduction
 3.	Getting started with java
@@ -171,4 +172,39 @@ public static void main(String[] args) {
     
 }
 
+Arrays
+
+Is a variable that stores values in indexes.
+
+public static void main(String[] args) {
+    String[] names;
+    names = new String[5];
+    names[0] = "King";
+    names[1] = "James";
+    names[2] = "Lodwa";
+    names[3] = "Austine";
+    names[4] = "Liz";
+
+    System.out.println(names[0]);
+    System.out.println(names[4]);
+    System.out.println(names[0] + " " + names[1] + " " +names[2] + " " + names[3] + " " + names[4]);
+}
+
+for loop
+public static void main(String[] args) {
+    String[] names;
+    Scanner chukua;
+    int number;
+    chukua = new Scanner(System.in);
+    System.out.println("How many names do you have?");
+    number = chukua.nextInt();
+    names = new String[number];
+    System.out.println("Enter the " +number+ " names");
+    for (int x=0; x<number; x++){
+        names[x] = chukua.next();
+    }
+    
+    for (int x=0; x<number; x++){
+        System.out.println(names[x]);
+    }
 
